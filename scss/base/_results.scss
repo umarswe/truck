@@ -1,0 +1,149 @@
+.result {
+  padding-bottom: 120px;
+}
+
+.result__content {
+  margin-bottom: 32px;
+}
+
+.result__title {
+  color: #363738;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 24px;
+}
+
+.result__description {
+  color: #6b6b6c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.result__box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.result__box-2,
+.result__box-3 {
+  display: none;
+}
+
+.result__box {
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--white, #fff);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+}
+
+.result__box-img {
+  width: 100%;
+  height: 100%;
+}
+
+.result__box-img_tablet {
+  display: none;
+}
+
+.result__box-content {
+  padding: 24px;
+}
+
+.result__box-title {
+  color: #363738;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  margin-bottom: 16px;
+}
+
+.result__box-description {
+  color: #6b6b6c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+.result__box-price {
+  display: inline-block;
+  color: #363738;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  padding-bottom: 11px;
+
+  border-bottom: 3px solid #ffce50;
+}
+
+@media screen and (min-width: 768px) {
+  .result {
+    padding-bottom: 170px;
+  }
+
+  .result__title {
+    font-size: 44px;
+  }
+
+  .result__description {
+    width: 465px;
+  }
+
+  .result__box-2 {
+    display: block;
+  }
+
+  .result__box-img {
+    display: none;
+  }
+
+  .result__box-img_tablet {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .result__box-title {
+    font-size: 20px;
+  }
+
+  .result__box-description,
+  .result__box-price {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .result__title {
+    font-size: 48px;
+  }
+
+  .result__description {
+    font-size: 16px;
+  }
+
+  .result__box-3 {
+    display: block;
+  }
+
+  .result__box-img {
+    display: block;
+  }
+
+  .result__box-img_tablet {
+    display: none;
+  }
+
+  .result__box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
